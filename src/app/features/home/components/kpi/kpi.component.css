@@ -1,0 +1,7 @@
+.card {
+  padding: 1rem;
+  border-top: 4px solid var(--primary-color);
+}
+.card .value h2 {
+  font-size: 3rem;
+}

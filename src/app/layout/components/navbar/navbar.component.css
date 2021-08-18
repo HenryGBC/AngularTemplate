@@ -5,6 +5,9 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   place-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar .navbar__items {
   list-style: none;

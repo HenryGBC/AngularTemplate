@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="container">
+  <div class="home-kpis">
+    <ng-container *ngIf="kpis$ | async as kpis">
+      <ng-container *ngFor="let kpi of kpis">
+        <app-kpi [kpi]="kpi"></app-kpi>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

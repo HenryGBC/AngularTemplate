@@ -1,0 +1,13 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.user__delete {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}

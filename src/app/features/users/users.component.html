@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="users">
+    <ng-container *ngIf="users$ | async as users">
+      <ng-container *ngFor="let user of users">
+        <app-user
+          [user]="user"
+          (deleteHandler)="deleteHandler($event)"
+        ></app-user>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

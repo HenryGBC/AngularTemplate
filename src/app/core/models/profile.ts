@@ -3,3 +3,6 @@ export interface IProfile {
   email: string;
   username: string;
 }
+export interface ProfileState {
+  profile: IProfile | undefined;
+}

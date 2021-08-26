@@ -44,12 +44,10 @@ export class UsersStoreService extends StateService<UserState> {
   }
 
   deleteUser(id: number) {
-    const users = [...this.state.users];
-    console.log(users);
+    let users = [...this.state.users];
     const userIndex = users.findIndex((item) => item.id == id);
-    console.log(userIndex);
-    console.log(users.splice(userIndex, 1));
-    // this.setState({ users: this.state.users.splice(userIndex, 1) });
+    users.splice(userIndex, 1);
+    this.setState({ users });
   }
   addUser(user: IUser) {
     this.setState({ users: [...this.state.users, user] });

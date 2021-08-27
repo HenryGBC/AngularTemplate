@@ -13,7 +13,7 @@ const initialState: ProfileState = {
 @Injectable({
   providedIn: 'root',
 })
-export class UsersStoreService extends StateService<ProfileState> {
+export class ProfileStoreService extends StateService<ProfileState> {
   profile$: Observable<IProfile> = this.select((state) => state.profile);
 
   // Expose the observable$ part of the _todos subject (read only stream)

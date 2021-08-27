@@ -1,4 +1,6 @@
-<app-navbar></app-navbar>
+<ng-container *ngIf="profile$ | async as profile">
+  <app-navbar [profile]="profile"></app-navbar>
+</ng-container>
 <app-menu></app-menu>
 
 <div class="content">

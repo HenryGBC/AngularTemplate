@@ -1,4 +1,7 @@
 <div class="container">
+  <ng-container *ngIf="profile$ | async as profile">
+    <h2>Hola {{ profile.fullName }}</h2>
+  </ng-container>
   <div class="home-kpis">
     <ng-container *ngIf="kpis$ | async as kpis">
       <ng-container *ngFor="let kpi of kpis">
